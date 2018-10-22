@@ -21,11 +21,11 @@ public class SplashActivity extends AppCompatActivity {
 			LiferayScreensContext.init(this);
 			SessionContext.loadStoredCredentialsAndServer(CredentialsStorageBuilder.StorageType.SHARED_PREFERENCES);
 
-			//if (SessionContext.hasUserInfo()) {
-			//	startActivity(HomeActivity.class);
-			//} else {
-			//	startActivity(LoginActivity.class);
-			//}
+			if (SessionContext.hasUserInfo()) {
+				startActivity(HomeActivity.class);
+			} else {
+				startActivity(LoginActivity.class);
+			}
 
 			finish();
 

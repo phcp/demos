@@ -57,9 +57,9 @@ public class LoginActivity extends AppCompatActivity implements LoginListener {
 	}
 
 	private void startHomeActivity() {
-		//Intent intent = new Intent(this, HomeActivity.class);
-		//finish();
-		//startActivity(intent);
+		Intent intent = new Intent(this, HomeActivity.class);
+		finish();
+		startActivity(intent);
 	}
 
 	@Override

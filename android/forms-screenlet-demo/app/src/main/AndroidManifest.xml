@@ -36,5 +36,9 @@
         <activity android:name="com.liferay.mobile.formsscreenletdemo.SignUpActivity"
             android:windowSoftInputMode="adjustResize">
         </activity>
+		<activity
+			android:name="com.liferay.mobile.formsscreenletdemo.HomeActivity"
+			android:theme="@style/TransparentTheme">
+		</activity>
 	</application>
 </manifest>
