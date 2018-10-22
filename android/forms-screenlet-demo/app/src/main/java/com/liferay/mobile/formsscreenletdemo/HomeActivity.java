@@ -100,7 +100,7 @@ public class HomeActivity extends AppCompatActivity {
 				startActivity(TakeCareListActivity.class);
 				break;
 			case R.id.special_offers:
-				//startActivity(SpecialOffersActivity.class);
+				startActivity(SpecialOffersActivity.class);
 				break;
 			case R.id.sign_out:
 				signOut();
