@@ -220,8 +220,8 @@ public class HomeActivity extends AppCompatActivity {
 	}
 
 	private void startFormActivity(View view) {
-		//Intent intent = new Intent(HomeActivity.this, FormsActivity.class);
-		//startActivity(intent);
+		Intent intent = new Intent(HomeActivity.this, FormsActivity.class);
+		startActivity(intent);
 	}
 
 }

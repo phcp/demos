@@ -52,5 +52,7 @@
 		</activity>
 		<activity android:name="com.liferay.mobile.formsscreenletdemo.SpecialOffersActivity">
 		</activity>
+		<activity android:name="com.liferay.mobile.formsscreenletdemo.FormsActivity">
+		</activity>
 	</application>
 </manifest>
