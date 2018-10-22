@@ -25,5 +25,16 @@
 				<category android:name="android.intent.category.LAUNCHER"/>
 			</intent-filter>
 		</activity>
+		<activity
+			android:name="com.liferay.mobile.formsscreenletdemo.LoginActivity"
+			android:windowSoftInputMode="adjustResize">
+		</activity>
+        <activity
+            android:name="com.liferay.mobile.formsscreenletdemo.ForgotPasswordActivity"
+            android:windowSoftInputMode="adjustResize">
+        </activity>
+        <activity android:name="com.liferay.mobile.formsscreenletdemo.SignUpActivity"
+            android:windowSoftInputMode="adjustResize">
+        </activity>
 	</application>
 </manifest>
