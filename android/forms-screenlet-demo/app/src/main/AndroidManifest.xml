@@ -46,5 +46,9 @@
         <activity android:name="com.liferay.mobile.formsscreenletdemo.BlogPostingItemActivity"
             android:windowSoftInputMode="adjustResize">
         </activity>
+		<activity android:name="com.liferay.mobile.formsscreenletdemo.TakeCareListActivity">
+		</activity>
+		<activity android:name="com.liferay.mobile.formsscreenletdemo.TakeCareVideoActivity">
+		</activity>
 	</application>
 </manifest>

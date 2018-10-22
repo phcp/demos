@@ -97,7 +97,7 @@ public class HomeActivity extends AppCompatActivity {
 				startActivity(BlogPostingsActivity.class);
 				break;
 			case R.id.take_care:
-				//startActivity(TakeCareListActivity.class);
+				startActivity(TakeCareListActivity.class);
 				break;
 			case R.id.special_offers:
 				//startActivity(SpecialOffersActivity.class);
