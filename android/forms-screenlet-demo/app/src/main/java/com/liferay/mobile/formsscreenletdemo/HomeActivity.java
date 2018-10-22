@@ -94,7 +94,7 @@ public class HomeActivity extends AppCompatActivity {
 	public void selectDrawerItem(MenuItem item) {
 		switch (item.getItemId()) {
 			case R.id.blog_postings:
-				//startActivity(BlogPostingsActivity.class);
+				startActivity(BlogPostingsActivity.class);
 				break;
 			case R.id.take_care:
 				//startActivity(TakeCareListActivity.class);
