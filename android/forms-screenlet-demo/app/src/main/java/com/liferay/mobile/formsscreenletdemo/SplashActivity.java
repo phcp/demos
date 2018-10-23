@@ -16,9 +16,10 @@ public class SplashActivity extends AppCompatActivity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_splash);
 
+		LiferayScreensContext.init(this);
+
 		new Handler().postDelayed(() -> {
 
-			LiferayScreensContext.init(this);
 			SessionContext.loadStoredCredentialsAndServer(CredentialsStorageBuilder.StorageType.SHARED_PREFERENCES);
 
 			//if (SessionContext.hasUserInfo()) {
