@@ -1,7 +1,10 @@
 # TGF Demo
 
-<div style="display: inline" align="center">
+<div align="center">
 <img src="desktop.png" alt="Desktop" width="400" height="227">
+</div>
+
+<div style="display: inline" align="center">
 <img src="mobile1.png" alt="Mobile" width="130" height="227">
 <img src="mobile2.png" alt="Mobile" width="130" height="227">
 </div>
