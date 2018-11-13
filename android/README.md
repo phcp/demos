@@ -13,3 +13,7 @@
       - AssetListScreenlet: Used to create take care of my car session
     - [APIO Consumer](https://github.com/liferay-mobile/apio-consumer-android)
     - [Liferay Push](https://github.com/liferay-mobile/liferay-push-android)
+
+![TGF - Desktop](forms-screenlet-demo/desktop.png)
+![TGF - Mobile1](forms-screenlet-demo/mobile1.png)
+![TGF - Mobile2](forms-screenlet-demo/mobile2.png)
