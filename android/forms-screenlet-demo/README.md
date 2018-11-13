@@ -14,9 +14,11 @@ This demo is about a Insurance Company that uses Liferay Screens for levarage it
     - [APIO Consumer](https://github.com/liferay-mobile/apio-consumer-android)
     - [Liferay Push](https://github.com/liferay-mobile/liferay-push-android)
 
-![TGF - Desktop](desktop.png)
-![TGF - Mobile1](mobile1.png)
-![TGF - Mobile2](mobile2.png)
+<div style="display: inline">
+<img src="desktop.png" alt="Desktop" width="400" height="227">
+<img src="mobile1.png" alt="Mobile" width="130" height="227">
+<img src="mobile2.png" alt="Mobile" width="130" height="227">
+</div>
 
 ## Installation Guideline
 
@@ -24,6 +26,17 @@ This demo is about a Insurance Company that uses Liferay Screens for levarage it
 
 #### Remote
 
+To Deploy your backend you can try WeDeploy Magic button:
+
+[![Deploy](https://cdn.wedeploy.com/images/deploy.svg)](https://console.wedeploy.com/deploy?repo=https://github.com/phcp/liferay-forms-demo)
+
 #### Local
 
+<img src="https://cdn-ak.f.st-hatena.com/images/fotolife/m/muziyoshiz/20160529/20160529223041.png" alt="Docker" width="110" height="90">
+
+To run the backend localy you can try our docker image.
+- Step 1:
+- Step 2:
+
 ### Mobile
+Set Up `service_context.xml` with your IP address if you have chosen to run remotely
