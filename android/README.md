@@ -1,6 +1,6 @@
 # Android
 
-## [TGF Demo](android/forms-screenlet-demo): This demo is about a Insurance Company that uses Liferay Screens for levarage it's App. To run this use the [INSTALLATION GUIDELINE](forms-screenlet-demo/README)
+## [TGF Demo](android/forms-screenlet-demo): This demo is about a Insurance Company that uses Liferay Screens for levarage it's App. To run this use the [Installation Guideline](/forms-screenlet-demo/README.md#installation-guideline)
  This demo use the following Liferay Technologies:
   - Backend:
     - [Liferay CE](https://github.com/liferay/liferay-portal)
