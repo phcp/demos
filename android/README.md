@@ -1,6 +1,7 @@
 # Android
 
-## [TGF Demo](android/forms-screenlet-demo): This demo is about a Insurance Company that uses Liferay Screens for levarage it's App. This demo use the following Liferay Technologies:
+## [TGF Demo](android/forms-screenlet-demo): This demo is about a Insurance Company that uses Liferay Screens for levarage it's App. To run this use the [INSTALLATION GUIDELINE](forms-screenlet-demo/README)
+ This demo use the following Liferay Technologies:
   - Backend:
     - [Liferay CE](https://github.com/liferay/liferay-portal)
     - [Liferay Forms](https://forms.liferay.com)
@@ -13,7 +14,3 @@
       - AssetListScreenlet: Used to create take care of my car session
     - [APIO Consumer](https://github.com/liferay-mobile/apio-consumer-android)
     - [Liferay Push](https://github.com/liferay-mobile/liferay-push-android)
-
-![TGF - Desktop](forms-screenlet-demo/desktop.png)
-![TGF - Mobile1](forms-screenlet-demo/mobile1.png)
-![TGF - Mobile2](forms-screenlet-demo/mobile2.png)
