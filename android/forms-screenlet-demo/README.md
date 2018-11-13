@@ -1,4 +1,11 @@
 # TGF Demo
+
+<div style="display: inline" align="center">
+<img src="desktop.png" alt="Desktop" width="400" height="227">
+<img src="mobile1.png" alt="Mobile" width="130" height="227">
+<img src="mobile2.png" alt="Mobile" width="130" height="227">
+</div>
+
 This demo is about a Insurance Company that uses Liferay Screens for levarage it's App. This demo use the following Liferay Technologies:
 
 - Backend:
@@ -13,12 +20,6 @@ This demo is about a Insurance Company that uses Liferay Screens for levarage it
         - AssetListScreenlet: Used to create take care of my car session
     - [APIO Consumer](https://github.com/liferay-mobile/apio-consumer-android)
     - [Liferay Push](https://github.com/liferay-mobile/liferay-push-android)
-
-<div style="display: inline">
-<img src="desktop.png" alt="Desktop" width="400" height="227">
-<img src="mobile1.png" alt="Mobile" width="130" height="227">
-<img src="mobile2.png" alt="Mobile" width="130" height="227">
-</div>
 
 ## Installation Guideline
 
