@@ -1,5 +1,6 @@
 package com.liferay.mobile.formsscreenletdemo.view;
 
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
@@ -11,6 +12,7 @@ import com.liferay.mobile.screens.rating.RatingListener;
 import com.liferay.mobile.screens.rating.RatingScreenlet;
 import com.liferay.mobile.screens.thingscreenlet.screens.ThingScreenlet;
 import com.liferay.mobile.screens.thingscreenlet.screens.views.Detail;
+import java.util.Objects;
 import kotlin.Unit;
 
 /**
@@ -31,8 +33,10 @@ public class FAQDetailActivity extends AppCompatActivity implements RatingListen
 		faqDetailScreenlet = findViewById(R.id.faq_content);
 		toolbar = findViewById(R.id.faq_toolbar);
 		setSupportActionBar(toolbar);
-		getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-		getSupportActionBar().setDisplayShowHomeEnabled(true);
+
+		ActionBar actionBar = Objects.requireNonNull(getSupportActionBar());
+		actionBar.setDisplayHomeAsUpEnabled(true);
+		actionBar.setDisplayShowHomeEnabled(true);
 
 		if (savedInstanceState == null) {
 			loadResource();

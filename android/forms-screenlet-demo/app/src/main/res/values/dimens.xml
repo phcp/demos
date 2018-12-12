@@ -59,12 +59,13 @@
 	<dimen name="faq_item_title_text_size">16sp</dimen>
 	<dimen name="faq_list_margin_top">13dp</dimen>
 	<dimen name="faq_detail_margin_top">32dp</dimen>
-	<dimen name="faq_detail_text_size">24dp</dimen>
 	<dimen name="faq_detail_padding_top">20dp</dimen>
+	<dimen name="faq_detail_text_size">24sp</dimen>
+	<dimen name="faq_detail_view_margin">18dp</dimen>
 	<dimen name="faq_content_margin_left">20dp</dimen>
 	<dimen name="faq_content_margin_right">20dp</dimen>
 	<dimen name="view_line_height">1dp</dimen>
 	<dimen name="rating_button_height">29dp</dimen>
 	<dimen name="rating_button_width">78dp</dimen>
-	<dimen name="faq_detail_view_margin">18dp</dimen>
+	<dimen name="rating_screenlet_margin">11dp</dimen>
 </resources>
