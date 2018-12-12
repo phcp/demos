@@ -60,7 +60,7 @@
 					android:gravity="center"
 					android:lineSpacingExtra="8sp"
 					android:text="@string/was_this_article_useful"
-					android:textSize="@dimen/faq_detail_text_view_size"
+					android:textSize="@dimen/faq_detail_text_size"
 					android:textStyle="normal"
 					/>
 
@@ -69,8 +69,8 @@
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
 					android:layout_gravity="center"
-					android:layout_marginBottom="@dimen/rating_screenlet_margin_top"
-					android:layout_marginTop="@dimen/rating_screenlet_margin_top"
+					android:layout_marginBottom="@dimen/rating_screenlet_margin"
+					android:layout_marginTop="@dimen/rating_screenlet_margin"
 					app:layoutId="@layout/layout_rating"
 					/>
 

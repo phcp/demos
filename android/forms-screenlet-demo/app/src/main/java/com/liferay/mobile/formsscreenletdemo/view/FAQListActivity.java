@@ -1,6 +1,7 @@
 package com.liferay.mobile.formsscreenletdemo.view;
 
 import android.content.Intent;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
@@ -17,6 +18,9 @@ import com.liferay.mobile.screens.thingscreenlet.screens.views.BaseView;
 import com.liferay.mobile.screens.thingscreenlet.screens.views.Detail;
 import com.liferay.mobile.screens.thingscreenlet.screens.views.Row;
 import com.liferay.mobile.screens.thingscreenlet.screens.views.Scenario;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Objects;
 import kotlin.Unit;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
@@ -36,14 +40,19 @@ public class FAQListActivity extends AppCompatActivity implements ScreenletEvent
 
 		toolbar = findViewById(R.id.faq_list_toolbar);
 		setSupportActionBar(toolbar);
-		getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-		getSupportActionBar().setDisplayShowHomeEnabled(true);
+
+		ActionBar actionBar = Objects.requireNonNull(getSupportActionBar());
+		actionBar.setDisplayHomeAsUpEnabled(true);
+		actionBar.setDisplayShowHomeEnabled(true);
 
 		faqListScreenlet = findViewById(R.id.faq_polular);
 		faqListScreenlet.setScreenletEvents(this);
 
-		BlogPosting.DEFAULT_VIEWS.put(Detail.INSTANCE, R.layout.layout_blog_posting_detail);
-		BlogPosting.DEFAULT_VIEWS.put(Row.INSTANCE, R.layout.layout_blog_posting_row);
+		Map<Scenario, Integer> blogCustomViewsMap = new HashMap<>();
+		blogCustomViewsMap.put(Detail.INSTANCE, R.layout.layout_blog_posting_detail);
+		blogCustomViewsMap.put(Row.INSTANCE, R.layout.layout_blog_posting_row);
+
+		faqListScreenlet.getLayoutIds().put("BlogPosting", blogCustomViewsMap);
 
 		if (savedInstanceState == null) {
 			loadFaqPopularListResource();
