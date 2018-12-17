@@ -26,6 +26,7 @@
 	<string name="login">Login</string>
 	<string name="login_failed">Login Failed</string>
 	<string name="my_policies">My Policies</string>
+	<string name="new_user_question">New User? Create an account</string>
 	<string name="not_now">NOT NOW</string>
 	<string name="password">Password</string>
 	<string name="payment">Payment</string>
@@ -37,7 +38,6 @@
 	<string name="sorry_workflow_is_not_read_yet">Sorry. Workflow Screenlet is not read yet.</string>
 	<string name="take_care_of_your_car">Take Care of Your Car</string>
 	<string name="thank_you_for_your_feedback">Thank you for your feedback!</string>
-	<string name="uppercase_signup">SIGN UP</string>
 	<string name="uppercase_login">LOGIN</string>
 	<string name="your_login">Your Login</string>
 	<string name="your_next_car_insurance">Your next car insurance.</string>

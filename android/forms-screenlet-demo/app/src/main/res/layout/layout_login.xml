@@ -89,23 +89,14 @@
 			android:layout_height="@dimen/login_button_height"
 			android:layout_marginTop="@dimen/login_margin_top"
 			>
-			<Button
-				android:id="@+id/liferay_signup_button"
+			<TextView
+				android:id="@+id/liferay_signup_textview"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
-				android:text="@string/uppercase_signup"
+				android:text="@string/new_user_question"
+				android:gravity="center"
 				/>
 
-			<com.liferay.mobile.screens.base.ModalProgressBar
-				android:id="@+id/liferay_signup_progress"
-				android:layout_width="wrap_content"
-				android:layout_height="match_parent"
-				android:layout_gravity="center_vertical|start"
-				android:theme="@style/white_theme"
-				android:visibility="invisible"
-				app:actionViewId="@id/liferay_signup_button"
-				/>
-			
 		</RelativeLayout>
 
 	</LinearLayout>

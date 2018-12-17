@@ -41,7 +41,7 @@ public class LoginActivity extends AppCompatActivity implements LoginListener {
 		TextView forgotPasswordText = findViewById(R.id.liferay_forgot_link);
 		forgotPasswordText.setOnClickListener(this::startForgotPasswordActivity);
 
-		Button signUpText = findViewById(R.id.liferay_signup_button);
+		TextView signUpText = findViewById(R.id.liferay_signup_textview);
 		signUpText.setOnClickListener(this::startSignUpActivity);
 
 		setDefaultValues();
