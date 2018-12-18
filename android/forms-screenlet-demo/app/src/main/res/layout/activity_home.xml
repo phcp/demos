@@ -26,7 +26,6 @@
 		android:theme="@style/AppTheme"
 		app:headerLayout="@layout/nav_header"
 		app:menu="@menu/drawer_menu"
-		app:itemIconTint="@color/item_icon_color"
 		app:itemTextAppearance="@style/MenuItemTextTheme"
 		/>
 

@@ -23,7 +23,6 @@ allprojects {
         jcenter()
         mavenLocal()
         google()
-        maven { url 'https://dl.bintray.com/liferay/liferay-mobile' }
     }
 }
 

@@ -13,4 +13,5 @@
     <string name="liferay_anonymousApiPassword">anonymous</string>
 
     <string name="push_sender_id">756861228038</string>
+    <string name="form_instance_id">36805</string>
 </resources>

@@ -23,7 +23,7 @@
 			android:layout_height="wrap_content"
 			android:layout_gravity="center_vertical"
 			android:layout_marginStart="@dimen/toolbar_title_margin_left"
-			android:text="@string/take_care_of_your_car"
+			android:text="@string/tips_and_utilities"
 			android:textSize="@dimen/toolbar_title_text_size"
 			/>
 

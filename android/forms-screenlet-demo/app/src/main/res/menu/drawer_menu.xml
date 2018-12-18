@@ -4,25 +4,32 @@
 	tools:showIn="navigation_view">
 	<group android:checkableBehavior="single">
 		<item
-			android:id="@+id/my_policies"
-			android:icon="@mipmap/my_policies_icon"
-			android:title="@string/my_policies"/>
+			android:id="@+id/insurance_quote"
+			android:icon="@drawable/ic_icon_insurance"
+			android:title="@string/insurance_quote"/>
 		<item
-			android:id="@+id/blog_postings"
-			android:title="@string/insurance_blog"/>
+			android:id="@+id/my_policies"
+			android:icon="@drawable/ic_icon_policy"
+			android:title="@string/my_policies"/>
+		<!--<item-->
+			<!--android:id="@+id/blog_postings"-->
+			<!--android:title="@string/insurance_blog"/>-->
 		<item
 			android:id="@+id/take_care"
-			android:title="@string/take_care_of_your_car"/>
+			android:icon="@drawable/ic_icon_car"
+			android:title="@string/tips_and_utilities"/>
 		<item
 			android:id="@+id/special_offers"
+			android:icon="@drawable/ic_icon_offers"
 			android:title="@string/special_offers"/>
 		<item
 			android:id="@+id/help"
-			android:icon="@mipmap/help_icon"
+			android:icon="@drawable/ic_icon_help"
 			android:title="@string/help"
 			/>
 		<item
 			android:id="@+id/sign_out"
+			android:icon="@drawable/ic_icon_logout"
 			android:title="@string/sign_out"/>
 	</group>
 </menu>

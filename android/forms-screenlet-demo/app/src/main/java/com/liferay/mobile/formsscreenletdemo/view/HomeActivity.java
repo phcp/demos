@@ -3,6 +3,7 @@ package com.liferay.mobile.formsscreenletdemo.view;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.support.annotation.StringRes;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.Snackbar;
 import android.support.v4.content.ContextCompat;
@@ -47,12 +48,8 @@ import org.json.JSONException;
 public class HomeActivity extends AppCompatActivity {
 
 	private DrawerLayout drawerLayout;
-	private NavigationView navigationView;
 	private ThingScreenlet userPortrait;
 	private Toolbar toolbar;
-	private TextView userName;
-	private static final int PORTRAIT_WIDTH = 90;
-	private static final int PORTRAIT_HEIGHT = 90;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -66,7 +63,7 @@ public class HomeActivity extends AppCompatActivity {
 		formButton.setOnClickListener(this::startFormActivity);
 
 		if (savedInstanceState == null) {
-			checkForDraft();
+			checkForDraft(R.string.form_instance_id);
 		}
 
 		setupNavigationDrawer();
@@ -123,12 +120,15 @@ public class HomeActivity extends AppCompatActivity {
 
 	public void selectDrawerItem(MenuItem item) {
 		switch (item.getItemId()) {
+			case R.id.insurance_quote:
+				startActivity(FormsActivity.class);
+				break;
 			case R.id.my_policies:
 				startActivity(PoliciesListActivity.class);
 				break;
-			case R.id.blog_postings:
-				startActivity(BlogPostingsActivity.class);
-				break;
+			//case R.id.blog_postings:
+			//	startActivity(BlogPostingsActivity.class);
+			//	break;
 			case R.id.take_care:
 				startActivity(TakeCareListActivity.class);
 				break;
@@ -158,9 +158,9 @@ public class HomeActivity extends AppCompatActivity {
 		startActivity(intent);
 	}
 
-	private void checkForDraft() {
+	private void checkForDraft(@StringRes int formInstanceId) {
 		String server = getResources().getString(R.string.liferay_server);
-		String url = DemoUtil.getResourcePath(server, Constants.FORM_INSTANCE_ID, ResourceType.FORMS);
+		String url = DemoUtil.getResourcePath(server, formInstanceId, ResourceType.FORMS);
 
 		new APIOFetchResourceService().fetchResource(url, this::onThingLoaded, this::logError);
 	}
@@ -231,13 +231,13 @@ public class HomeActivity extends AppCompatActivity {
 		drawerLayout.addDrawerListener(toggle);
 		toggle.syncState();
 
-		navigationView = findViewById(R.id.nav_view);
+		NavigationView navigationView = findViewById(R.id.nav_view);
 		navigationView.setNavigationItemSelectedListener(this::onOptionsItemSelected);
 
 		setupDrawerContent(navigationView);
 
 		View navHeaderView = navigationView.getHeaderView(0);
-		userName = navHeaderView.findViewById(R.id.user_name);
+		TextView userName = navHeaderView.findViewById(R.id.user_name);
 		userName.setText(SessionContext.getCurrentUser().getFullName());
 
 		userPortrait = navHeaderView.findViewById(R.id.user_portrait);
