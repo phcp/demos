@@ -23,7 +23,9 @@ public class SpecialOffersActivity extends AppCompatActivity implements WebListe
 		webScreenlet = findViewById(R.id.web_screenlet);
 		webScreenlet.setListener(this);
 
-		WebScreenletConfiguration configuration = new WebScreenletConfiguration.Builder("/web/guest/special-offers")
+		String specialOffersUrl = getString(R.string.special_offers_url);
+
+		WebScreenletConfiguration configuration = new WebScreenletConfiguration.Builder(specialOffersUrl)
 				.addRawCss(R.raw.special_offers_custom,"special_offers_custom.css")
 				.load();
 

@@ -42,7 +42,7 @@
 				android:id="@+id/forms_screenlet"
 				android:layout_width="match_parent"
 				android:layout_height="match_parent"
-				app:formInstanceId="@string/form_instance_id"
+				app:formInstanceId="@string/insurance_form_id"
 				/>
 
 		</android.support.v4.widget.SwipeRefreshLayout>

@@ -20,8 +20,8 @@
         android:id="@+id/my_policies"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:groupId="20126"
-        app:portletItemName="policiesfilter"
+        app:groupId="@string/liferay_company_id"
+        app:portletItemName="@string/my_policies_filter"
         app:layoutId="@layout/layout_asset_list_demo"/>
 
 </LinearLayout>

@@ -33,7 +33,7 @@
 		android:id="@+id/asset_list_screenlet"
 		android:layout_width="match_parent"
 		android:layout_height="match_parent"
-		app:portletItemName="DemoVideos"
+		app:portletItemName="@string/tips_and_utilities_filter"
 		/>
 
 </LinearLayout>

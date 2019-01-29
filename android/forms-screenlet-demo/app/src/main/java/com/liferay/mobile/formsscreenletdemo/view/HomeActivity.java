@@ -63,7 +63,7 @@ public class HomeActivity extends AppCompatActivity {
 		formButton.setOnClickListener(this::startFormActivity);
 
 		if (savedInstanceState == null) {
-			checkForDraft(R.string.form_instance_id);
+			checkForDraft(R.string.insurance_form_id);
 		}
 
 		setupNavigationDrawer();
@@ -78,21 +78,24 @@ public class HomeActivity extends AppCompatActivity {
 	}
 
 	private void setupForPushNotification() {
+		String pushSenderId = getString(R.string.push_sender_id);
+
+		if (pushSenderId.isEmpty()) return;
+
 		Session session = SessionContext.createSessionFromCurrentSession();
+		int portalVersion = getResources().getInteger(R.integer.liferay_portal_version);
 
 		try {
-			Push.with(session).withPortalVersion(71).onSuccess(jsonObject -> {
-
+			Push.with(session).withPortalVersion(portalVersion).onSuccess(jsonObject -> {
 				try {
 					String registrationId = jsonObject.getString("token");
 					LiferayLogger.d("Device registrationId: " + registrationId);
 				} catch (JSONException e) {
 					LiferayLogger.e(e.getMessage(), e);
 				}
-
 			}).onFailure(e -> {
 				LiferayLogger.e(e.getMessage(), e);
-			}).register(this, getString(R.string.push_sender_id));
+			}).register(this, pushSenderId);
 
 		} catch (Exception e) {
 			LiferayLogger.e(e.getMessage(), e);
