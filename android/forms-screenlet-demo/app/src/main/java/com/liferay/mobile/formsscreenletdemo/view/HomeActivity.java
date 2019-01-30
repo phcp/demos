@@ -41,6 +41,8 @@ import com.liferay.mobile.screens.util.LiferayLogger;
 import kotlin.Unit;
 import org.json.JSONException;
 
+import static java.lang.Long.parseLong;
+
 /**
  * @author Luísa Lima
  * @author Victor Oliveira
@@ -61,9 +63,10 @@ public class HomeActivity extends AppCompatActivity {
 
 		Button formButton = findViewById(R.id.forms_button);
 		formButton.setOnClickListener(this::startFormActivity);
+		long formInstanceId = parseLong(getString(R.string.insurance_form_id));
 
 		if (savedInstanceState == null) {
-			checkForDraft(R.string.insurance_form_id);
+			checkForDraft(formInstanceId);
 		}
 
 		setupNavigationDrawer();
@@ -161,7 +164,7 @@ public class HomeActivity extends AppCompatActivity {
 		startActivity(intent);
 	}
 
-	private void checkForDraft(@StringRes int formInstanceId) {
+	private void checkForDraft(long formInstanceId) {
 		String server = getResources().getString(R.string.liferay_server);
 		String url = DemoUtil.getResourcePath(server, formInstanceId, ResourceType.FORMS);
 
