@@ -81,6 +81,7 @@ public class FAQListActivity extends AppCompatActivity implements ScreenletEvent
 		Intent intent = new Intent(this, FAQDetailActivity.class);
 		intent.putExtra(Constants.THING_ID_KEY, thing.getId());
 		startActivity(intent);
+		finish();
 
 		return null;
 	}

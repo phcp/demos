@@ -31,6 +31,7 @@ import com.liferay.mobile.formsscreenletdemo.view.sessions.TakeCareListActivity;
 import com.liferay.mobile.formsscreenletdemo.view.sessions.BlogPostingsActivity;
 import com.liferay.mobile.push.Push;
 import com.liferay.mobile.screens.context.SessionContext;
+import com.liferay.mobile.screens.context.User;
 import com.liferay.mobile.screens.context.storage.CredentialsStorageBuilder;
 import com.liferay.mobile.screens.ddm.form.model.FormInstanceRecord;
 import com.liferay.mobile.screens.ddm.form.service.APIOFetchLatestDraftService;
@@ -243,21 +244,17 @@ public class HomeActivity extends AppCompatActivity {
 		setupDrawerContent(navigationView);
 
 		View navHeaderView = navigationView.getHeaderView(0);
-		TextView userName = navHeaderView.findViewById(R.id.user_name);
-		userName.setText(SessionContext.getCurrentUser().getFullName());
+		User currentUser = SessionContext.getCurrentUser();
+
+		if (currentUser != null) {
+			TextView nameView = navHeaderView.findViewById(R.id.user_name);
+			nameView.setText(currentUser.getFullName());
+
+			TextView emailView = navHeaderView.findViewById(R.id.user_email);
+			emailView.setText(currentUser.getEmail());
+		}
 
 		userPortrait = navHeaderView.findViewById(R.id.user_portrait);
-	}
-
-	private Unit showError(String message) {
-
-		int icon = R.drawable.default_error_icon;
-		int backgroundColor =
-			ContextCompat.getColor(this, com.liferay.mobile.screens.viewsets.lexicon.R.color.lightRed);
-
-		AndroidUtil.showCustomSnackbar(userPortrait, message, Snackbar.LENGTH_LONG, backgroundColor, Color.WHITE, icon);
-
-		return Unit.INSTANCE;
 	}
 
 	private void startFormActivity(View view) {

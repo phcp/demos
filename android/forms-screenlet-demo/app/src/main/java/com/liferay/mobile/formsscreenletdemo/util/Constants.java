@@ -4,7 +4,7 @@ package com.liferay.mobile.formsscreenletdemo.util;
  * @author Victor Oliveira
  */
 public interface Constants {
-	long CONTENT_SPACE_ID = 20126;
+	long CONTENT_SPACE_ID = 37252;
 
 	String BLOG_POSTING_CLASS_NAME = "com.liferay.blogs.model.BlogsEntry";
 	String BLOG_POSTING_ENDPOINT = "/o/api/p/content-space/%d/blog-posting";
@@ -15,4 +15,3 @@ public interface Constants {
 	String ASSET_ENTRY_URL = "url";
 	String ASSET_ENTRY_TITLE = "title";
 }
-
