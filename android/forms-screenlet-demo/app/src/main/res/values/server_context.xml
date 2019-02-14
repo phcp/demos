@@ -25,7 +25,7 @@
     <string name="my_policies_filter">My Policies</string>
 
     <!--Special Offers values-->
-    <string name="special_offers_url">/web/guest/special-offers</string>
+    <string name="special_offers_url">/web/guest</string>
 
     <!--Tips and Utilities values-->
     <!--Asset Publisher's filter - Configuration Template name-->
